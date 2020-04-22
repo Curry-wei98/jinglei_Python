@@ -15,7 +15,7 @@ def bgm():
     playsound('music.mp3')
 
 
-t_bgm = threading.Thread(target=bgm) #后台播放bgm
+t_bgm = threading.Thread(target=bgm)  # 后台播放bgm
 t_bgm.start()
 
 word1 = ['Python、', 'Java、', '数据库、', '.Net、', 'GO、', 'html、', 'C++、', 'web、']
@@ -43,5 +43,3 @@ msg = a + b + c + d
 time.sleep(2)
 engine.say(msg)
 engine.runAndWait()
-
-t_bgm.
